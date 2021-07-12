@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+h1{
+  color:red;
+}
+img{
+  max-width: 100%;
+}
+.nav{
+  display: flex;
+  list-style: none;
+}
+.nav-item{
+  margin-left: 1rem;
+  border: 1px solid black;
+  background: black;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.nav-item_link{
+  text-decoration: none;
+ color:white;
+}
+.nav-item_link:hover{
+  color: gray;
+}
