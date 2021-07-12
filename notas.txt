@@ -4,4 +4,6 @@ se usa npm run nombre.extension)
 En esta clase estamos usando express generator que es un paquete que nos instala una base de express en los proyectos para no tener que escribir siempre
 el mismo codigo nosotros.
 
-Los archivos PARTIALS son los reutilizables en todas las páginas del sitio. Footer, header , menu , etc...
+Los archivos PARTIALS son los reutilizables en todas las páginas del sitio. Footer, header , nav , etc...
+
+Con la linea de código     <%-  include("pages/partials/nav")   %> podemos insertar un partial en el index.ejs
