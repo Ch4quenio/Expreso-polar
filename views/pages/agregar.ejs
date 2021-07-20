@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title></title>
+  </head>
+  <body>
+<%- include("../partials/nav") %>
+<h1>Agregar libro</h1>
+<form action="/agregar_proceso" method="POST" class = "container">
+<label >
+Titulo
+<input class = "inputin" type="text" name="titulo">
+</label>
+<label>
+  Precio:
+  <input class = "inputin" type="number" min = "1" name = "precio">
+</label>
+<label >
+Autor:
+<select name =  "autor">
+  <% autores.forEach(autor =>{ %>
+<option value="<%= autor.id %>">
+  <%= autor.nombreCompleto %>
+</option>
+  <% }) %>
+</select>
+
+</label>
+<label>
+Portada :
+<input class = "inputin" type="text" name="portada" value="">
+</label>
+<input class = "inputin" type="submit" value="Agregar libro">
+</form>
+  </body>
+</html>

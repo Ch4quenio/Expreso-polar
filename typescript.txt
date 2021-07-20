@@ -1,0 +1,9 @@
+TYPESCRIPT
+
+¿Qué es ?
+
+Es un lenguaje de programacion que compila JavaScript. Vendria a ser como un SASS.
+
+¿Para que sirve?
+
+Se utiliza como base para angular.

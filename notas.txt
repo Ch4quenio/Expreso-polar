@@ -1,0 +1,53 @@
+npm run start para abrir el servidor con express. (se usa start porque ese es el script predeterminado del package.json pero si no tenemos ese script
+se usa npm run nombre.extension)
+
+En esta clase estamos usando express generator que es un paquete que nos instala una base de express en los proyectos para no tener que escribir siempre
+el mismo codigo nosotros.
+
+Los archivos PARTIALS son los reutilizables en todas las páginas del sitio. Footer, header , nav , etc...
+
+Con la linea de código     <%-  include("pages/partials/nav")   %> podemos insertar un partial en el index.ejs
+
+Sequelize :
+
+Sequelize sirve para trabajar con bases de datos de una forma mas simple. MariaDB entre otras. Solo funciona con bases de datos relacionales.
+
+Que es un endpoint?
+
+Una url a la que le pegamos cuando trabajamos con APIS.
+
+Restful APIS
+
+Son apis que utilizan HTTP request para hacer llamados de tipo GET y POST.
+
+CRUD
+
+Create, Read, Update, Delete.
+
+Tipo de organizacion :
+
+./views / pages / partials
+
+./public / css / images
+
+/config En config estan las conecciones a las bases de datos.
+
+/models Son las definiciones de las tablas de la base de datos
+
+Las carpetas se organizan como en Express generator.
+
+En las tablas de las bases de datos existen distintos tipos de datos:
+
+INTEGER Entero
+STRING  Texto
+DATE    Fecha
+
+El comando para empezar a trabajar con esto es
+
+npx sequelize init:models Crea la parte mas basica para usar las tablas.
+
+npx sequelize init:config  Esto crea la base de datos con XAMPP y adapta nuestra configuracion a DB
+
+Claves primarias en bases de datos
+
+Es un numero identificador irrepetible. Cada registro es distinto al anterior, de esta forma se diferencian y no se mezclan los contenidos.

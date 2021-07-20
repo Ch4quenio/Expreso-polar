@@ -8,29 +8,42 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  color: hotpink;
+h1{
+  color: #000080;
 }
 
-img {
-  max-width: 100%;
-}
-
-.nav {
+.nav{
   display: flex;
-  list-style: none;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.nav-item {
-  flex-grow: 1;
-}
-.nav-item_link {
-  display: block;
-  padding: 8px;
-  background-color: lavenderblush;
 }
 
-.nav-item_link:hover {
-  background-color: lightgoldenrodyellow;
+.nav-item{
+  list-style: none;
+  margin-left: 2rem;
+  padding: 2REM;
+  background: #000080;
+  border-radius:5px;
+  margin-top:1rem;
+}
+
+.nav-item_link{
+  text-decoration: none;
+  color :white;
+}
+
+.nav-item_link:hover{
+  color :gray;
+transition: 0.5s
+}
+
+
+label{
+  display: block;
+  margin: 1rem;
+}
+
+.inputin{
+  padding: 1rem;
+height: 0.5rem;
+position: relative;
+
 }

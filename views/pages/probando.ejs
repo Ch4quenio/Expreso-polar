@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <%- include('../partials/nav') %>
+
+    <h1>Estás probando</h1>
+
+    <ul class="lista-cool">
+        <li>Stephen King
+            <ul>
+                <li>IT</li>
+                <li>Carrie</li>
+            </ul>
+        </li>
+        <li>Daniel Radcliffe</li>
+        <li>Anne Rice</li>
+    </ul>
+    <hr>
+    <ul class="lista-cool">
+        <% autores.forEach(auto => { %>
+            <li>
+                Author ID: <%= auto.id %>
+                Name: <%= auto.nombreCompleto %>
+            </li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>

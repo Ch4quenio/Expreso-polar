@@ -8,20 +8,20 @@
     <%- include('./partials/nav') %>
 
     <h1><%= title %></h1>
-    
-    <ul class="listado">
-      <% books.forEach(book => { %>
-        <li class="listado-item">
-          <a href="/libro/<%= book.id %>">
-            <%= book.titulo %>
-          </a>
-        </li>
-      <% }) %>
-    </ul>
 
-    <!--
-      La imagen está dentro de /public/images pero se renderiza sin el /public
-    <img src="/images/gatito.jpg" alt="Gatito"> -->
+
+
+<ul class = "listado">
+<% books.forEach(book => { %>
+<li class = "listado-item">
+<a href="/libro/<%= book.id %>">
+  <%= book.titulo  %> -</a>
+
+<a href="/eliminar/<%= book.id %>">
+  Eliminar </a></li>
+<% }) %>
+</ul>
+<img src="/images/osito.jpg" alt="Osito polar">
 
   </body>
 </html>
